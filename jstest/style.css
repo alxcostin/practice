@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: #f5f5f5;
+}
+
+canvas {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  background: white;
+  margin: 2rem;
+  box-shadow: 0 5px 23px 1px rgba(0, 0, 0, 0.06), 0 2px 6px 0px rgba(0, 0, 0, 0.03);
+}
+
+canvas.shake {
+  animation: shake 0.5s linear 1;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
